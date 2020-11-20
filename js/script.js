@@ -53,15 +53,37 @@ const description = {
 // создаем свой сбственный метод
 description.makeTest();
 // встроенный метод в языке
-console.log(Object.keys(description).length)
+console.log(Object.keys(description).length);
 
 var u=0, age = 1;
 
-while (1) {
-  if (u==true) {
-    console.log('Happy Birthday');
-    break;
-  }
-  else
-    u++;
+// while (1) {
+//   if (u==true) {
+//     console.log('Happy Birthday');
+//     break;
+//   }
+//   else
+//     u++;
+// }
+
+// SPLIT, JOIN, SORT
+// SPLIT - способ перебора через известный заданый разделитель например запятая
+// формирует массив на основании строк
+const str = prompt("", "");
+// промт работает только с браузером
+const products = str.split(", ");
+products.sort();
+console.log(products.join('; '));
+// JOIN - формирует строку на основании массива
+// например список имен
+// SORT - сортирует массив как строки в том числе и цифры
+
+const ebatKopat = [2, 56, 11, 8, 99];
+ebatKopat.sort();
+console.log(ebatKopat);
+// что-бы сортировал например числа по порядку применим функцию
+// со встроенным алгоритмом быстрой сортировки
+function compareNum(a, b) {
+    return a- b;
 }
+// ПСЕВДОМАССИВ ЭТО СТРУКТУРА идентичная массиву но не использующая методы
